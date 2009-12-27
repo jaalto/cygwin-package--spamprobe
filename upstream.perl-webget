@@ -1,0 +1,2 @@
+tag1: spamprobe
+  http://packages.debian.org/unstable/spamprobe  pregexp:orig.tar.gz file:spamprobe_1.4d.orig.tar.gz new: x:

@@ -1,0 +1,96 @@
+spamprobe
+------------------------------------------
+
+Bayesian spam filter
+
+This package provides a spam filter based on the article A Plan for
+Spam by Paul Graham. It uses a database (either BerkeleyDB or a
+simpler hash file) to store one- and two-word phrases. Only certain
+headers are analyzed and HTML tags are ignored to prevent false
+positives of legitimate HTML emails. Image attachments are considered
+as words that can signal spam. It can be simply integrated with
+procmail or maildrop to filter spam on incoming mail.
+
+Runtime requirements:
+  cygwin
+  libdb4.5
+  libjpeg62
+  libpng12
+  libungif4
+  xorg-x11-bin-dlls
+  zlib
+
+Build requirements:
+  cygwin
+  libdb4.5-devel
+  libjpeg62
+  libpng12-devel
+  libungif4
+  xorg-x11-devel
+  zlib
+
+Canonical homepage:
+  http://sourceforge.net/projects/spamprobe
+  http://packages.debian.org/spamprobe
+
+Canonical download:
+  See above
+
+Version control repository:
+  http://sourceforge.net/cvs/?group_id=61201
+
+Mailing list:
+  http://sourceforge.net/mail/?group_id=61201
+
+Forum / Wiki:
+  http://sourceforge.net/forum/?group_id=61201
+
+IRC channel:
+
+Upstream contact:
+  Maintainer: Brian Burton <bburton@users.sourceforge.net>
+  Bugs: http://sourceforge.net/tracker/?atid=496457&group_id=61201&func=browse
+
+License:
+  QPL (Q Public License)
+
+Language:
+  C
+
+------------------------------------
+
+Build instructions:
+  unpack spamprobe-0.9.8-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./spamprobe*.sh all
+
+This will create:
+  spamprobe-0.9.8-1.tar.bz2
+  spamprobe-0.9.8-1-src.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distro:
+
+usr/bin/spamprobe.exe
+usr/share/doc/Cygwin/spamprobe-0.9.8.README
+usr/share/doc/spamprobe-0.9.8/ChangeLog
+usr/share/doc/spamprobe-0.9.8/license.txt
+usr/share/doc/spamprobe-0.9.8/readme.txt
+usr/share/man/man1/spamprobe.1.gz
+
+------------------
+
+Port Notes:
+
+- compiled wth options:
+  --enable-default-8bit
+  --with-db
+
+----- version 1.4d-1 -----
+- Initial release 2007-12-20 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
