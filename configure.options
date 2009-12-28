@@ -1,0 +1,5 @@
+# When ./confgure is being run, options listed here are appended
+# after default Cygwin option set.
+
+--enable-default-8bit
+--enable-cdb
