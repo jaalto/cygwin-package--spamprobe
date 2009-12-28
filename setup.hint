@@ -7,4 +7,5 @@ positives of legitimate HTML emails. Image attachments are considered
 as words that can signal spam. It can be simply integrated with
 procmail or maildrop to filter spam on incoming mail."
 category: Mail
-requires: cygwin libdb4.5 libjpeg62 libpng12 libungif4 xorg-x11-bin-dlls zlib
+requires: libdb4.5 libjpeg7 libpng12 libungif4 libX11_6 libXau6 libXdmcp6 libxcb1 zlib0
+

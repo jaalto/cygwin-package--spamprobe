@@ -12,22 +12,27 @@ as words that can signal spam. It can be simply integrated with
 procmail or maildrop to filter spam on incoming mail.
 
 Runtime requirements:
-  cygwin
   libdb4.5
-  libjpeg62
+  libjpeg7
   libpng12
   libungif4
-  xorg-x11-bin-dlls
-  zlib
+  libX11_6
+  libXau6
+  libXdmcp6
+  libxcb1
+  zlib0
 
 Build requirements:
   cygwin
   libdb4.5-devel
-  libjpeg62
+  libjpeg-devel
   libpng12-devel
-  libungif4
-  xorg-x11-devel
-  zlib
+  libungif-devel
+  libX11-devel
+  libXau-devel
+  libXdmcp-devel
+  libxcb-devel
+  zlib-devel
 
 Canonical homepage:
   http://sourceforge.net/projects/spamprobe
@@ -60,37 +65,33 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack spamprobe-0.9.8-1-src.tar.bz2
+  unpack spamprobe-1.4d-2-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./spamprobe*.sh all
 
 This will create:
-  spamprobe-0.9.8-1.tar.bz2
-  spamprobe-0.9.8-1-src.tar.bz2
+  spamprobe-1.4d-2.tar.bz2
+  spamprobe-1.4d-2-src.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary distro:
-
-usr/bin/spamprobe.exe
-usr/share/doc/Cygwin/spamprobe-0.9.8.README
-usr/share/doc/spamprobe-0.9.8/ChangeLog
-usr/share/doc/spamprobe-0.9.8/license.txt
-usr/share/doc/spamprobe-0.9.8/readme.txt
-usr/share/man/man1/spamprobe.1.gz
+  See Cygwin package archive
 
 ------------------
 
 Port Notes:
 
-- compiled wth options:
-  --enable-default-8bit
-  --with-db
+- compiled wth options: --enable-default-8bit
+  and --enable-cdb
+
+----- version 1.4d-2 -----
+- Cygwin 1.7 release 2009-12-28 Jari Aalto
 
 ----- version 1.4d-1 -----
 - Initial release 2007-12-20 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2009 Jari Aalto; Licenced under GPL v2 or later

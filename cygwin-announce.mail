@@ -1,8 +1,6 @@
--- Copyright (C) 2007 Jari Aalto; Licenced under GPL v2 or later
-
 To: cygwin-announce@cygwin.com
-Subject: Updated: package N.N
-Subject: New package: spamprobe 1.4d-1 -- Bayesian spam filter
+Subject: Updated: spamprobe 1.4d-2 -- Bayesian spam filter
+--text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
