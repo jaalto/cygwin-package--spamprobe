@@ -1,0 +1,3 @@
+# Just before make(1) is about to be run, this file is sourced
+
+CYGBUILD_MAKEFLAGS="LIBS=\"-ldb  -lgif -lpng -ljpeg\""
