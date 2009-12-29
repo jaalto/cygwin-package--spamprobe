@@ -15,7 +15,7 @@ Runtime requirements:
   libdb4.5
   libjpeg7
   libpng12
-  libungif4
+  libgif4
   libX11_6
   libXau6
   libXdmcp6
@@ -27,7 +27,7 @@ Build requirements:
   libdb4.5-devel
   libjpeg-devel
   libpng12-devel
-  libungif-devel
+  libgif-devel
   libX11-devel
   libXau-devel
   libXdmcp-devel
