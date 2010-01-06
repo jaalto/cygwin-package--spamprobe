@@ -19,6 +19,8 @@ procmail or maildrop to filter spam on incoming mail.
 CHANGES SINCE LAST RELEASE
 ==========================
 
+Compiled against new Cygwin 1.7 libraries (libungif4 replaced with libgif4)
+
 http://spamprobe.cvs.sourceforge.net/spamprobe/src/ChangeLog?revision=HEAD&view=markup
 
 INSTALL OR UPGRADE NOTES
