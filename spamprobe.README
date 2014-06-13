@@ -12,9 +12,9 @@ as words that can signal spam. It can be simply integrated with
 procmail or maildrop to filter spam on incoming mail.
 
 Runtime requirements:
-  libdb4.5
+  libdb4.8
   libjpeg7
-  libpng12
+  libpng14
   libgif4
   libX11_6
   libXau6
@@ -23,10 +23,10 @@ Runtime requirements:
   zlib0
 
 Build requirements:
-  cygwin
-  libdb4.5-devel
+  quilt
+  libdb4.8-devel
   libjpeg-devel
-  libpng12-devel
+  libpng-devel
   libgif-devel
   libX11-devel
   libXau-devel
