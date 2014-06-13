@@ -1,1 +1,4 @@
 10-configure-libungif.patch
+10-include.patch
+20-compile.patch
+30-libpng15.patch

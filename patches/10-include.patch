@@ -1,0 +1,159 @@
+---
+ src/database/DatabaseConfig.cc           |    1 +
+ src/hdl/HdlTokenizer.cc                  |    1 +
+ src/includes/MultiLineSubString.h        |    2 ++
+ src/includes/util.h                      |    2 ++
+ src/parser/AutoTrainMailMessageReader.cc |    1 +
+ src/parser/HtmlTokenizer.cc              |    1 +
+ src/parser/MailMessageReader.cc          |    1 +
+ src/parser/MbxMailMessageReader.cc       |    1 +
+ src/spamprobe/Command_cleanup.cc         |    1 +
+ src/spamprobe/Command_edit_term.cc       |    1 +
+ src/spamprobe/Command_exec.cc            |    1 +
+ src/spamprobe/Command_import.cc          |    1 +
+ src/spamprobe/Command_purge.cc           |    1 +
+ src/spamprobe/spamprobe.cc               |    1 +
+ 14 files changed, 16 insertions(+)
+
+--- a/src/includes/util.h
++++ b/src/includes/util.h
+@@ -28,6 +28,8 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <string.h>
++
+ #ifndef _util_h
+ #define _util_h
+ 
+--- a/src/database/DatabaseConfig.cc
++++ b/src/database/DatabaseConfig.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include <stdexcept>
+ #include "File.h"
+ #include "WordData.h"
+--- a/src/parser/AutoTrainMailMessageReader.cc
++++ b/src/parser/AutoTrainMailMessageReader.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "MailMessage.h"
+ #include "AutoTrainMailMessageReader.h"
+ 
+--- a/src/includes/MultiLineSubString.h
++++ b/src/includes/MultiLineSubString.h
+@@ -31,6 +31,8 @@
+ #ifndef _MultiLineSubString_h
+ #define _MultiLineSubString_h
+ 
++
++#include <climits>
+ #include "AbstractMultiLineString.h"
+ 
+ class MultiLineSubString : public AbstractMultiLineString
+--- a/src/parser/HtmlTokenizer.cc
++++ b/src/parser/HtmlTokenizer.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "AbstractTokenReceiver.h"
+ #include "StringReader.h"
+ #include "RegularExpression.h"
+--- a/src/parser/MailMessageReader.cc
++++ b/src/parser/MailMessageReader.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "RegularExpression.h"
+ #include "MailMessage.h"
+ #include "MailMessageList.h"
+--- a/src/parser/MbxMailMessageReader.cc
++++ b/src/parser/MbxMailMessageReader.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include <stdexcept>
+ #include "MailMessage.h"
+ #include "MailMessageList.h"
+--- a/src/hdl/HdlTokenizer.cc
++++ b/src/hdl/HdlTokenizer.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "AbstractCharReader.h"
+ #include "HdlError.h"
+ #include "HdlToken.h"
+--- a/src/spamprobe/Command_cleanup.cc
++++ b/src/spamprobe/Command_cleanup.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "CleanupManager.h"
+ #include "SpamFilter.h"
+ #include "FrequencyDB.h"
+--- a/src/spamprobe/Command_edit_term.cc
++++ b/src/spamprobe/Command_edit_term.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "SpamFilter.h"
+ #include "FrequencyDB.h"
+ #include "CommandConfig.h"
+--- a/src/spamprobe/Command_exec.cc
++++ b/src/spamprobe/Command_exec.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "SpamFilter.h"
+ #include "CommandConfig.h"
+ #include "ConfigManager.h"
+--- a/src/spamprobe/Command_import.cc
++++ b/src/spamprobe/Command_import.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include <fstream>
+ #include "LineReader.h"
+ #include "IstreamCharReader.h"
+--- a/src/spamprobe/Command_purge.cc
++++ b/src/spamprobe/Command_purge.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include "CleanupManager.h"
+ #include "SpamFilter.h"
+ #include "FrequencyDB.h"
+--- a/src/spamprobe/spamprobe.cc
++++ b/src/spamprobe/spamprobe.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <stdlib.h>
+ #include <unistd.h>
+ #include <locale.h>
+ #include <signal.h>
