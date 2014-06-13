@@ -3,4 +3,6 @@ https://cygwin.com/ml/cygwin-apps/2012-03/threads.html#00175
 
 See possible new maintainer at http://cygwin.com/cygwin-pkg-maint
 
-2014-06-13 NOTE: wrote libpng15 and gcc 4.8.3, so now it compiled ok.
+2014-06-13 NOTE:
+- wrote patches for libpng15 and gcc 4.8.3
+- It compiled ok in x32, x64
