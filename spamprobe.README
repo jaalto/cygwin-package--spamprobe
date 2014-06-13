@@ -12,26 +12,19 @@ as words that can signal spam. It can be simply integrated with
 procmail or maildrop to filter spam on incoming mail.
 
 Runtime requirements:
-  libdb4.8
-  libjpeg7
-  libpng15
+  libdb5.3
+  libgcc1
   libgif4
-  libX11_6
-  libXau6
-  libXdmcp6
-  libxcb1
-  zlib0
+  libjpeg8
+  libpng15
+  libstdc++6
 
 Build requirements:
   quilt
-  libdb4.8-devel
+  libdb5.3-devel
   libjpeg-devel
   libpng-devel
   libgif-devel
-  libX11-devel
-  libXau-devel
-  libXdmcp-devel
-  libxcb-devel
   zlib-devel
 
 Canonical homepage:
