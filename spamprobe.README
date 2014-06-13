@@ -14,7 +14,7 @@ procmail or maildrop to filter spam on incoming mail.
 Runtime requirements:
   libdb4.8
   libjpeg7
-  libpng14
+  libpng15
   libgif4
   libX11_6
   libXau6
@@ -65,15 +65,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack spamprobe-1.4d-2-src.tar.bz2
+  unpack spamprobe-1.4d-3-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./spamprobe*.sh all
 
 This will create:
-  spamprobe-1.4d-2.tar.bz2
-  spamprobe-1.4d-2-src.tar.bz2
+  spamprobe-1.4d-3.tar.xz
+  spamprobe-1.4d-3-src.tar.xz
 
 -------------------------------------------
 
@@ -87,6 +87,10 @@ Port Notes:
 - compiled wth options: --enable-default-8bit
   and --enable-cdb
 
+----- version 1.4d-3 -----
+- New release 2014-06-13 Jari Aalto
+- Wrote many patches to port to libpng15 and gcc 4.8.3
+
 ----- version 1.4d-2 -----
 - Cygwin 1.7 release 2009-12-28 Jari Aalto
 
@@ -94,4 +98,4 @@ Port Notes:
 - Initial release 2007-12-20 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2009 Jari Aalto; Licenced under GPL v2 or later
+Copyright (C) 2007-2014 Jari Aalto; Licenced under GPL v2 or later
